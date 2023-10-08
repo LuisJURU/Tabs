@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background: rgb(166, 250, 251);
+    background: linear-gradient(150deg, rgb(146, 221, 209) 0%, rgb(91, 126, 180) 31%, rgb(43, 66, 139) 59%, rgb(17, 43, 126) 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.70);
+    -moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.70);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.70);
+    border-radius: 1.5rem;
+}
+
+.contenedor-tab {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(202, 201, 201);
+    font-size: 180px;
+    font-weight: 600;
+    position: relative;
+}
+
+.contenedor-tab .tab {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    border: none;
+    background: none;
+    color: rgb(143, 166, 233);
+    padding: 18px;
+    cursor: pointer;
+}
+
+.contenedor-tab .tab.activo {
+    color: rgb(34, 34, 236);
+}
+
+.barra {
+    position: absolute;
+    top: 69px;
+    left: 20px;
+    width: 90px;
+    height: 5px;
+    background-color: blue;
+    transition: all .6s;
+}
+
+.contenedor-text {
+    padding: 20px;
+}
+
+.contenedor-text .text {
+    display: none;
+}
+
+.contenedor-text .text.activo {
+    display: block;
+}
